@@ -1,0 +1,13 @@
+import os
+
+SIGNAL_SERVICE = os.getenv('SIGNAL_SERVICE', '127.0.0.1:8081')
+PHONE_NUMBER = os.getenv('PHONE_NUMBER')
+
+CLIENT_IP = os.getenv('CLIENT_IP', '192.168.1.2')
+CLIENT_PORT = int(os.getenv('CLIENT_PORT', '4242'))
+
+DEFAULT_HAE = '100.0'
+DEFAULT_CE = '10.0'
+DEFAULT_LE = '10.0'
+DEFAULT_STALE_S = 60
+DEFAULT_TYPE = 'a-f-G-U-C-I'
